@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btAppView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:textAlignment="textEnd"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E6C32A"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/deviceId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="deviceName:mac" />
+
+        <TextView
+            android:id="@+id/deviceStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:justificationMode="none"
+            android:text="status"
+            android:textAlignment="textEnd" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Switch
+            android:id="@+id/startCapture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Capture"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Activity" />
+
+        <CheckBox
+            android:id="@+id/idNeutralPosture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Neutral Spine" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/optStanding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Standing" />
+
+                <RadioButton
+                    android:id="@+id/optSitting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sitting" />
+
+                <RadioButton
+                    android:id="@+id/optWalking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Walking" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/optCycling"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cycling" />
+
+                <RadioButton
+                    android:id="@+id/optBikeRiding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Driving Bike" />
+
+                <RadioButton
+                    android:id="@+id/optCarDriving"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Driving Car" />
+            </TableRow>
+
+        </TableLayout>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btLogView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#C3C3BF"
+        android:lines="5"
+        android:text="Logs ..." />
+
+    <TextView
+        android:id="@+id/logSummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="logSummary" />
+
+</LinearLayout>
